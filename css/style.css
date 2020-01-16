@@ -96,6 +96,16 @@ body {
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -120,4 +130,8 @@ body {
 .btn-white {
     background-color: #fff;
     color: #777;
+}
+
+.btn-animated {
+    animation: fadeIn 1.5s 0.75s backwards;
 }
