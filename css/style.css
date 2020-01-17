@@ -28,17 +28,17 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-container {
+.header__logo-container {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 10rem;
 }
 
-.text-container {
+.header__text-container {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -54,7 +54,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary__main {
+.heading-primary--main {
     display: block;
     font-size: 6.8rem;
     font-weight: 400;
@@ -63,7 +63,7 @@ body {
     animation: moveInTop 1s ease-out;
 }
 
-.heading-primary__sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -137,11 +137,11 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
 
-.btn-animated {
+.btn--animated {
     animation: fadeIn 1.5s 0.75s backwards;
 }
