@@ -1,0 +1,19 @@
+{
+  "name": "pp_01",
+  "version": "1.0.0",
+  "description": "Landing page for portfolio projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elldrigar/PP_01-Landing-Page.git"
+  },
+  "author": "Gawron.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elldrigar/PP_01-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/Elldrigar/PP_01-Landing-Page#readme"
+}
