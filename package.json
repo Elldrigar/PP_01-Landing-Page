@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Elldrigar/PP_01-Landing-Page/issues"
   },
-  "homepage": "https://github.com/Elldrigar/PP_01-Landing-Page#readme"
+  "homepage": "https://github.com/Elldrigar/PP_01-Landing-Page#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
 }
