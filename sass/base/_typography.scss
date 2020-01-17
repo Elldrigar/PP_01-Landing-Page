@@ -4,6 +4,7 @@ body {
     line-height: 1.7;
     color: $color-gray-dark;
 }
+
 .heading-primary {
     color: $color-white;
     text-transform: uppercase;
@@ -27,4 +28,14 @@ body {
         margin-right: -1.75rem;
         animation: moveInBottom 1s ease-out;
     }
+}
+
+.heading-secondary {
+    display: inline-block;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-clip: text;
+    color: transparent;
 }
