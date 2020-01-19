@@ -35,11 +35,9 @@
             outline: 1rem solid $color-primary;
             z-index: 20;
         }
-
     }
 
     &:hover &__photo:not(:hover) {
         transform: scale(.90) rotate(-3deg);
-
     }
 }
