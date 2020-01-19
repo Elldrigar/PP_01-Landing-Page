@@ -170,6 +170,25 @@ body {
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9) rotate(-3deg); }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s; }
+  .feature-box__text {
+    font-size: 1.6rem; }
+  .feature-box__icon {
+    display: inline-block;
+    font-size: 6rem;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: scale(1.04) translateY(-1.5rem); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -220,3 +239,8 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover; }
