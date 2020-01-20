@@ -1,6 +1,6 @@
-//##################
-//## FUNCIONALITY ##
-//##################
+//###################
+//## FUNCTIONALITY ##
+//###################
 
 .card {
     position: relative;
@@ -28,7 +28,6 @@
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-
             }
         }
     }
@@ -55,9 +54,13 @@
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto01_small.jpg);
         }
 
-        &--2 {}
+        &--2 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto02_small.jpg);
+        }
 
-        &--3 {}
+        &--3 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto03_small.jpg);
+        }
 
     }
 
@@ -100,5 +103,32 @@
                 }
             }
         }
+    }
+
+    //################
+    //## BACK  SIDE ##
+    //################
+
+    &__cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__price-box {
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size: $default-font-size;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
