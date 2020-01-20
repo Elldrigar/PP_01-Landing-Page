@@ -76,7 +76,8 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  word-spacing: 3px; }
 
 .paragraph {
   font-size: 1.6rem; }
