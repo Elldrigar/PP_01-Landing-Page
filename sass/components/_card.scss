@@ -29,6 +29,14 @@
             &-1 {
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
         }
     }
 
@@ -51,15 +59,15 @@
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto01_small.jpg);
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/card_01.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto02_small.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/card_02.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/foto03_small.jpg);
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/card_03.jpg);
         }
 
     }
@@ -82,6 +90,14 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .85));
         }
     }
 
