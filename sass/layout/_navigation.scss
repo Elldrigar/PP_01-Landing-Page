@@ -9,9 +9,11 @@
         right: 6rem;
         height: 7rem;
         width: 7rem;
+        text-align: center;
         background-color: $color-white;
         border-radius: 50%;
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        cursor: pointer;
         z-index: 1000;
     }
 
@@ -77,6 +79,10 @@
         }
     }
 
+    //###################
+    //## FUNCTIONALITY ##
+    //###################
+
     &__checkbox:checked~&__background {
         transform: scale(80);
     }
@@ -84,5 +90,65 @@
     &__checkbox:checked~&__nav {
         opacity: 1;
         width: 100%;
+    }
+
+    //####################
+    //## HAMBURGER ICON ##
+    //####################
+
+    &__icon {
+        position: relative;
+        margin-top: 3.5rem;
+
+        &,
+        &:before,
+        &:after {
+            display: inline-block;
+            width: 3.5rem;
+            height: 2px;
+            background-color: $color-gray-dark-2;
+            transition: all .3s;
+        }
+
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+        }
+
+        &:before {
+            top: -1rem;
+        }
+
+        &:after {
+            top: 1rem;
+        }
+    }
+
+    &__button:hover &__icon:before {
+        top: -1.4rem;
+    }
+
+    &__button:hover &__icon {
+        width: 4rem;
+    }
+
+    &__button:hover &__icon:after {
+        top: 1.4rem;
+    }
+
+    &__checkbox:checked+&__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked+&__button &__icon:before {
+        transform: rotate(135deg);
+        top: 0;
+    }
+
+    &__checkbox:checked+&__button &__icon:after {
+        transform: rotate(-135deg);
+        top: 0;
     }
 }
