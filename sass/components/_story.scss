@@ -40,11 +40,13 @@
         left: 50%;
         transform: translate(-50%, 20%);
         backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         color: $color-white;
         text-transform: uppercase;
         font-size: $default-font-size;
         text-align: center;
         opacity: 0;
+        overflow: hidden;
         transition: all .5s;
     }
 

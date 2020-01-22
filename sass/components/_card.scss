@@ -9,6 +9,7 @@
 
     &__side {
         position: absolute;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         overflow: hidden;
         border-radius: 3px;
