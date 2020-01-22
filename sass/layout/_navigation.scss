@@ -37,12 +37,12 @@
     &__nav {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -1000px;
         height: 100vh;
-        width: 0;
+        width: 100%;
         opacity: 0;
-        transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        z-index: 750;
+        transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: -750;
         visibility: none;
     }
 
@@ -95,7 +95,8 @@
 
     &__checkbox:checked~&__nav {
         opacity: 1;
-        width: 100%;
+        z-index: 750;
+        left: 0;
         visibility: visible;
     }
 
