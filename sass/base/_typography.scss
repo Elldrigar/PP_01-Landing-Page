@@ -19,6 +19,16 @@ body {
         letter-spacing: 5rem;
         margin-right: -5rem;
         animation: moveInTop 1s ease-out;
+
+        @include mq(medium) {
+            letter-spacing: 4rem;
+            font-size: 6rem;
+        }
+
+        @include mq(small) {
+            letter-spacing: 3rem;
+            font-size: 5rem;
+        }
     }
 
     &--sub {
@@ -28,6 +38,14 @@ body {
         letter-spacing: 1.75rem;
         margin-right: -1.75rem;
         animation: moveInBottom 1s ease-out;
+
+        @include mq(medium) {
+            letter-spacing: 1.3rem;
+        }
+
+        @include mq(small) {
+            letter-spacing: 1rem;
+        }
     }
 }
 
@@ -40,6 +58,18 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+
+    @include mq(large) {
+        font-size: 3rem;
+    }
+
+    @include mq(medium) {
+        font-size: 2.5rem;
+    }
+
+    @include mq(small) {
+        font-size: 2.3rem;
+    }
 }
 
 .heading-tertiary {

@@ -5,8 +5,19 @@
     background-color: rgba($color-white, .60);
     border-radius: 3px;
     padding: 6rem;
+    padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-20deg);
+
+    @include mq(large) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include mq(small) {
+        transform: skewX(7deg);
+    }
 
     &__shape {
         position: relative;
@@ -17,6 +28,12 @@
         clip-path: circle(50%);
         -webkit-clip-path: circle(50%);
         transform: translateX(-3rem) skewX(20deg) rotate(-10deg);
+
+        @include mq(small) {
+            transform: translateX(-3rem) skewX(-7deg) rotate(-10deg);
+        }
+
+
     }
 
     &__img {
@@ -35,6 +52,11 @@
 
     &__text {
         transform: skewX(20deg);
+
+        @include mq(small) {
+            transform: skewX(-7deg);
+        }
+
     }
 
     &__caption {

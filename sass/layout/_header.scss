@@ -6,6 +6,18 @@
     background-position: center;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
+    @include mq(large) {
+        clip-path: polygon(0 0, 100% 0, 100% 77vh, 0 100%);
+    }
+
+    @include mq(medium) {
+        clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    }
+
+    @include mq(small) {
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
+
     &__logo-container {
         position: absolute;
         top: 4rem;

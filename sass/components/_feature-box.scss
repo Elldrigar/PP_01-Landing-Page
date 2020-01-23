@@ -18,6 +18,11 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+
+        @include mq(large) {
+            font-size: 10rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &:hover {

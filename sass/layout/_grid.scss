@@ -1,79 +1,80 @@
-//###########################
-//### GRID FLOAT TEMPLATE ###
-//##########################
+/*
+###########################
+### GRID FLOAT TEMPLATE ###
+##########################
 
-// #### ####
-//     <div class="row">
-//         <div class="col-1-of-2">
-//             Col 1 of 2
-//         </div>
-//         <div class="col-1-of-2">
-//             Col 1 of 2
-//         </div>
-//     </div>
+ #### ####
+     <div class="row">
+         <div class="col-1-of-2">
+             Col 1 of 2
+         </div>
+         <div class="col-1-of-2">
+             Col 1 of 2
+         </div>
+     </div>
 
-// ## ## ##
-//     <div class="row">
-//         <div class="col-1-of-3">
-//             Col 1 of 3
-//         </div>
-//         <div class="col-1-of-3">
-//             Col 1 of 3
-//         </div>
-//         <div class="col-1-of-3">
-//             Col 1 of 3
-//         </div>
-//     </div>
+ ## ## ##
+     <div class="row">
+         <div class="col-1-of-3">
+             Col 1 of 3
+         </div>
+         <div class="col-1-of-3">
+             Col 1 of 3
+         </div>
+         <div class="col-1-of-3">
+             Col 1 of 3
+         </div>
+     </div>
 
-// ## #####
-//     <div class="row">
-//         <div class="col-1-of-3">
-//             Col 1 of 3
-//         </div>
-//         <div class="col-2-of-3">
-//             Col 2 of 3
-//         </div>
-//     </div>
+ ## #####
+     <div class="row">
+         <div class="col-1-of-3">
+             Col 1 of 3
+         </div>
+         <div class="col-2-of-3">
+             Col 2 of 3
+         </div>
+     </div>
 
-// ## ## ## ##
-//     <div class="row">
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//     </div>
+ ## ## ## ##
+     <div class="row">
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+     </div>
 
-// ## ## ####
-//     <div class="row">
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-2-of-4">
-//             Col 2 of 4
-//         </div>
-//     </div>
+ ## ## ####
+     <div class="row">
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-2-of-4">
+             Col 2 of 4
+         </div>
+     </div>
 
-// ## ######
-//     <div class="row">
-//         <div class="col-1-of-4">
-//             Col 1 of 4
-//         </div>
-//         <div class="col-3-of-4">
-//             Col 3 of 4
-//         </div>
-//     </div>
-// 
+ ## ######
+     <div class="row">
+         <div class="col-1-of-4">
+             Col 1 of 4
+         </div>
+         <div class="col-3-of-4">
+            Col 3 of 4
+         </div>
+     </div>
+*/
 
 .row {
     max-width: $grid-width;
@@ -81,6 +82,27 @@
 
     &:not(:last-child) {
         margin-bottom: $gap-vertical;
+
+        @include mq(large) {
+            margin-bottom: $gap-vertical-small;
+        }
+    }
+
+    @include mq (xlarge) {
+        padding: 0 3rem;
+    }
+
+    @include mq (large) {
+        max-width: 70rem;
+        padding: 0 3rem;
+    }
+
+    @include mq (medium) {
+        max-width: 60rem;
+    }
+
+    @include mq (small) {
+        max-width: 60rem;
     }
 
     @include clearfix;
@@ -90,6 +112,15 @@
 
         &:not(:last-child) {
             margin-right: $gap-horizontal;
+
+            @include mq(large) {
+                margin-right: 0;
+                margin-bottom: $gap-vertical-small;
+            }
+        }
+
+        @include mq(large) {
+            width: 100% !important;
         }
     }
 

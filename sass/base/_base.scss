@@ -9,9 +9,25 @@
 html {
     font-size: 62.5%; // 1rem
     scroll-behavior: smooth;
+
+    @include mq(large) {
+        font-size: 56.25%;
+    }
+
+    @include mq(medium) {
+        font-size: 50%;
+    }
+
+    @include mq(small) {
+        font-size: 40%;
+    }
 }
 
 body {
     box-sizing: border-box;
     padding: 3rem;
+
+    @include mq(large) {
+        padding: 0rem;
+    }
 }

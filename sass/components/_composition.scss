@@ -11,22 +11,49 @@
         transition: all .2s;
         z-index: 10;
 
+        @include mq(large) {
+            width: 80%;
+        }
+
+        @include mq(large) {
+            float: left;
+            position: relative;
+            width: 33.333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
         &--p1 {
             left: 0;
             top: -2rem;
             transform: rotate(-5deg);
+
+            @include mq(large) {
+                top: 0;
+                transform: rotate(-8deg);
+            }
         }
 
         &--p2 {
             right: 0;
             top: 2rem;
             transform: rotate(8deg);
+
+            @include mq(large) {
+                right: 2rem;
+                z-index: 20;
+            }
         }
 
         &--p3 {
             left: 20%;
             top: 14rem;
             transform: rotate(-13deg);
+
+            @include mq(large) {
+                top: 3rem;
+                left: -3rem;
+                transform: rotate(-21deg);
+            }
         }
 
         &:hover {

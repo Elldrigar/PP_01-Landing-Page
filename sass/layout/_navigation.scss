@@ -20,6 +20,11 @@
         box-shadow: 0 1rem 3rem rgba($color-black, .1);
         cursor: pointer;
         z-index: 1000;
+
+        @include mq (large) {
+            top: 4rem;
+            right: 4rem;
+        }
     }
 
     &__background {
@@ -32,6 +37,11 @@
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         transition: transform .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         z-index: 500;
+
+        @include mq (large) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     }
 
     &__nav {
