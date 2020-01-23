@@ -149,7 +149,8 @@
         font-weight: 100;
     }
 
-    @include mq(large) {
+    @media only screen and (max-width:991.98px),
+    only screen and (hover: none) {
         height: auto;
         border-radius: 3px;
         background-color: $color-white;
