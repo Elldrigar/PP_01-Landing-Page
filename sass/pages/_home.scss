@@ -65,10 +65,26 @@
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
-    height: 55rem;
+
+    @include mq(large) {
+        background-image: linear-gradient(105deg, rgba($color-white, .9) 0%, rgba($color-white, .9) 70%, transparent 90%), url(../img/hero.jpg);
+        background-size: cover;
+    }
+
+    @include mq(small) {
+        background-image: linear-gradient(to right, rgba($color-white, .9) 0%, rgba($color-white, .9) 100%, transparent 90%), url(../img/hero.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include mq(large) {
+            width: 85%;
+        }
+
+        @include mq (small) {
+            width: 100%;
+        }
     }
 }
